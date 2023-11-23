@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.container {
+  padding: 50px 100px;
+}
+
+.br-mobile {
+  display: none;
+}
+
+.header {
+  background-color: #000;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+.header__title {
+  width: 50%;
+  text-align: right;
+  font-weight: 600;
+  padding-left: 20px;
+}
+.header__hr {
+  height: 64px;
+  border: 1px solid #fff;
+}
+.header__logo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo-img {
+  height: 60px;
+}
+
+.main-section {
+  background-color: #b31f3b;
+}
+
+.about-us-section {
+  background-color: #000;
+  color: #fff;
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  max-width: 432px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.card__img {
+  max-height: 284px;
+  overflow: hidden;
+}
+.card__img__img {
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+.card__img:hover .card__img__img {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.card__title {
+  font-weight: 600;
+}
+.card__desc {
+  font-weight: 400;
+}
+.card__button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin-top: auto;
+  font-weight: 600;
+  padding: 20px 0px;
+  min-width: 170px;
+  background-color: #fff;
+  text-align: center;
+}
+.card__button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.about-us__wrapper {
+  gap: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-us__title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #b31f3b;
+}
+.about-us__img {
+  max-width: 100%;
+}
+.about-us__desc {
+  text-align: center;
+}
+.about-us__smiles {
+  margin-top: -40px;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #161616;
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    gap: 15px;
+  }
+  .header__title {
+    font-size: 14px;
+  }
+  .header__logo-img {
+    height: 50px;
+  }
+  .container {
+    padding: 50px 0px 50px;
+  }
+  .br-mobile {
+    display: block;
+  }
+  .card-wrapper {
+    margin-top: -50px;
+  }
+  .main-section {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #000), color-stop(50%, #b31f3b));
+    background: linear-gradient(180deg, #000 10%, #b31f3b 50%);
+  }
+  .card {
+    gap: 15px;
+  }
+  .card__title {
+    margin-inline: 30px;
+  }
+  .card__desc {
+    margin-inline: 30px;
+  }
+  .card__button {
+    margin-left: 30px;
+  }
+  .about-us__wrapper {
+    gap: 40px;
+  }
+  .about-us__desc {
+    padding: 0px 30px;
+  }
+  .about-us__smiles {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+}
